@@ -1,0 +1,29 @@
+nsf:
+  type: http
+  version: '2.0'
+  nsfServer: 'http://nsf-server-poc666.netease.com'
+  application:
+    name: qzDemoConsumer
+    version: 1.0.1
+    projectCode: szk-project
+    envCode: prod
+    zone: default
+    group: default
+    tags:
+      -
+        key: c1
+        value: vip1
+      -
+        key: c2
+        value: vip2
+      -
+        key: nc1
+        value: test1
+  authority:
+    accessKey: cccc509d2e474dcebc638287c1d8c636
+    secretKey: 3f44f38bcc974900a1df36669bdd0389
+  manager:
+    patterns:
+      -
+        className: 'com.demo.consumer.controller.nsf.*'
+        methods: []
