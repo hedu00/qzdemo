@@ -1,0 +1,32 @@
+{
+  "RequestId": "e65b5cc8-48ac-4762-a0a3-ce3cb23d3973",
+  "Code": "success",
+  "Message": "Success get boot environment config",
+  "Config": {
+    "Registry": {
+      "enable": true,
+      "address": "http://nsf-registry-0-poc666.netease.com/eureka/,http://nsf-registry-1-poc666.netease.com/eureka/"
+    },
+    "Authority": {
+      "enable": true,
+      "address": "http://platform-service-auth-poc666.netease.com"
+    },
+    "Apollo": {
+      "enable": true,
+      "address": "http://nsf-config-service-poc666.netease.com",
+      "env": "DEV",
+      "namespaces": {
+        "Private": [
+          "application"
+        ]
+      }
+    },
+    "Grpc": {
+      "enable": true,
+      "port": "8980"
+    },
+    "Tunnel": {
+      "address": "nsf-tunnel-server-poc666.netease.com"
+    }
+  }
+}

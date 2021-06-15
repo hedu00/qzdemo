@@ -1,0 +1,29 @@
+nsf:
+  type: http
+  version: '2.0'
+  nsfServer: 'http://nsf-server-poc666.netease.com'
+  application:
+    name: qzDemoProvider
+    version: 1.0.2
+    projectCode: hdpro
+    envCode: prod
+    zone: default
+    group: default
+    tags:
+      -
+        key: p1
+        value: p102
+      -
+        key: p2
+        value: p202
+      -
+        key: np1
+        value: test102
+  authority:
+    accessKey: f0ca48cf97fd41068dfdea6ec2b6d515
+    secretKey: d3f3324b40884333b923f156721b2636
+  manager:
+    patterns:
+      -
+        className: com.demo.provider.controller.nsf.*
+        methods: []
